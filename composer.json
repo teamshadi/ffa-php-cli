@@ -1,0 +1,23 @@
+{
+    "name": "shadiakiki1986/ffa-php-cli",
+    "description": "CLI for ffa-php-core",
+    "type": "project",
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^0.9"
+    },
+    "require": {
+      "shadiakiki1986/ffa-php-mock": "^0",
+        "symfony/console": "^3.2"
+    },
+    "autoload": {
+      "psr-4" : {
+        "FfaPhp\\Console\\" : "src/FfaPhp/Console"
+      }
+    },
+    "bin": ["bin/ffa"],
+    "scripts": {
+        "test": [
+            "parallel-lint . --exclude vendor"
+        ]
+    }
+}
