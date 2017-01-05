@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "66d19f1d5ea80427bca42bbdfebd0282",
-    "content-hash": "b276c36d1c760f41a2f87074040c3e1e",
+    "content-hash": "9768086f047b41b4c4b4486839dae89f",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -83,7 +82,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-11-26 00:15:39"
+            "time": "2016-11-26T00:15:39+00:00"
         },
         {
             "name": "psr/log",
@@ -130,24 +129,27 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "shadiakiki1986/ffa-php-mock",
-            "version": "0.0.2",
+            "version": "0.0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shadiakiki1986/ffa-php-mock.git",
-                "reference": "a50693748b7e8e89ca038d95ed6030e0bdc6bbf5"
+                "reference": "9a3188e58030aa70cadea1bd129ee6e3685002aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shadiakiki1986/ffa-php-mock/zipball/a50693748b7e8e89ca038d95ed6030e0bdc6bbf5",
-                "reference": "a50693748b7e8e89ca038d95ed6030e0bdc6bbf5",
+                "url": "https://api.github.com/repos/shadiakiki1986/ffa-php-mock/zipball/9a3188e58030aa70cadea1bd129ee6e3685002aa",
+                "reference": "9a3188e58030aa70cadea1bd129ee6e3685002aa",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "^1.21"
+            },
+            "provide": {
+                "shadiakiki1986/ffa-php-implementation": "0.0.1"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "^0.9",
@@ -162,7 +164,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Mock objects of ffa-php-core for development and testing",
-            "time": "2016-12-21 03:58:40"
+            "time": "2017-01-05T11:41:40+00:00"
         },
         {
             "name": "symfony/console",
@@ -225,7 +227,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-11 14:34:22"
+            "time": "2016-12-11T14:34:22+00:00"
         },
         {
             "name": "symfony/debug",
@@ -282,7 +284,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-16 22:18:16"
+            "time": "2016-11-16T22:18:16+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -341,7 +343,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14 01:06:16"
+            "time": "2016-11-14T01:06:16+00:00"
         }
     ],
     "packages-dev": [
@@ -390,7 +392,7 @@
             ],
             "description": "This tool check syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/JakubOnderka/PHP-Parallel-Lint",
-            "time": "2015-12-15 10:42:16"
+            "time": "2015-12-15T10:42:16+00:00"
         }
     ],
     "aliases": [],

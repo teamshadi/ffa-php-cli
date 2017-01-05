@@ -3,10 +3,11 @@
     "description": "CLI for ffa-php-core",
     "type": "project",
     "require-dev": {
-        "jakub-onderka/php-parallel-lint": "^0.9"
+        "jakub-onderka/php-parallel-lint": "^0.9",
+        "shadiakiki1986/ffa-php-mock": "*"
     },
     "require": {
-      "shadiakiki1986/ffa-php-mock": "^0",
+      "shadiakiki1986/ffa-php-implementation": "0.0.1",
         "symfony/console": "^3.2"
     },
     "autoload": {
