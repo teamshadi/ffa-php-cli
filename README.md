@@ -4,7 +4,7 @@ A CLI for `ffa-php-core`
 # Installation
 Below code snippets are for linux
 
-1. Install php
+1. Install php 7
 2. Install [composer](https://getcomposer.org/download/)
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
