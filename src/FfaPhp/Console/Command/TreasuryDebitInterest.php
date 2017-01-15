@@ -4,6 +4,7 @@ namespace FfaPhp\Console\Command;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputOption;
 
 // http://symfony.com/doc/current/console.html
 class TreasuryDebitInterest extends Command
@@ -20,7 +21,13 @@ class TreasuryDebitInterest extends Command
           // the full command description shown when running the command with
           // the "--help" option
           ->setHelp("This command allows you to generate debit interests report used for treasury...")
-      ;
+          ->addOption(
+              'format',
+              null,
+              InputOption::VALUE_REQUIRED,
+              'Format: html, json, emailIfAny',
+              'html'
+          );
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -33,7 +40,7 @@ class TreasuryDebitInterest extends Command
       ]);
 
       // outputs a message followed by a "\n"
-      $output->writeln('Whoa!');
+      // $output->writeln('Whoa!');
 
       // outputs a message without adding a "\n" at the end of the line
       $output->write('You are about to ');

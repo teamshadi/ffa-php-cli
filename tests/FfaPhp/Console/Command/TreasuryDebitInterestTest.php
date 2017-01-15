@@ -1,6 +1,6 @@
 <?php
 
-namespace Ffaphp\Console\Command;
+namespace FfaPhp\Console\Command;
 
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -13,51 +13,51 @@ class TreasuryDebitInterestTest extends\PHPUnit_Framework_TestCase
         $application = new Application();
         $application->add(new TreasuryDebitInterest());
 
-        $command = $application->find('treasury:debit-interest');
-        $this->commandTester = new CommandTester($command);
+        $this->command = $application->find('treasury:debit-interest');
+        $this->commandTester = new CommandTester($this->command);
     }
 
     public function testExecuteBare()
     {
-        $commandTester->execute(array(
-            'command'  => $command->getName()
+        $this->commandTester->execute(array(
+            'command'  => $this->command->getName()
         ));
 
         // the output of the command in the console
-        //$output = $commandTester->getDisplay();
+        //$output = $this->commandTester->getDisplay();
         //$this->assertContains('Username: Wouter', $output);
     }
 
     public function testExecuteFormatJson()
     {
-        $commandTester->execute(array(
-            'command' => $command->getName(),
-            'format' => 'json'
+        $this->commandTester->execute(array(
+            'command' => $this->command->getName(),
+            '--format' => 'json'
         ));
     }
 
     public function testExecuteFormatJsonDateMonth()
     {
-        $commandTester->execute(array(
-            'command' => $command->getName(),
-            'format' => 'emailIfAny',
+        $this->commandTester->execute(array(
+            'command' => $this->command->getName(),
+            '--format' => 'emailIfAny',
             'date_month' => '2015-01'
         ));
     }
 
     public function testExecuteFormatEmailIfAny()
     {
-        $commandTester->execute(array(
-            'command' => $command->getName(),
-            'format' => 'emailIfAny'
+        $this->commandTester->execute(array(
+            'command' => $this->command->getName(),
+            '--format' => 'emailIfAny'
         ));
     }
 
     public function testExecuteFormatEmailIfAnyAccountTypeTanyaNotifyPublish()
     {
-        $commandTester->execute(array(
-            'command' => $command->getName(),
-            'format' => 'emailIfAny',
+        $this->commandTester->execute(array(
+            'command' => $this->command->getName(),
+            '--format' => 'emailIfAny',
             'accountType' => 'Tanya',
             'notifyTracker',
             'publishToBlog'
