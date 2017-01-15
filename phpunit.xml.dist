@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- copied from https://github.com/shadiakiki1986/git-rest-api-client-php/blob/master/phpunit.xml.dist -->
+<phpunit backupGlobals="false"
+  backupStaticAttributes="false"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false"
+  stopOnError="false"
+  syntaxCheck="true"
+  bootstrap="vendor/autoload.php"
+  >
+  <testsuites>
+    <testsuite name="Main Test Suite">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist>
+      <directory suffix=".php">src</directory>
+      <exclude>
+        <directory>./tests</directory>
+        <directory>./vendor</directory>
+      </exclude>
+    </whitelist>
+  </filter>
+</phpunit>
