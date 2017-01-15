@@ -1,6 +1,6 @@
 <?php
 
-namespace PdoGit\Command;
+namespace Ffaphp\Console\Command;
 
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -11,7 +11,7 @@ class TreasuryDebitInterestTest extends\PHPUnit_Framework_TestCase
 
     public function setUp() {
         $application = new Application();
-        $application->add(new Export());
+        $application->add(new TreasuryDebitInterest());
 
         $command = $application->find('treasury:debit-interest');
         $this->commandTester = new CommandTester($command);
