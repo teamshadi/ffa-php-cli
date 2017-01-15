@@ -1,4 +1,4 @@
-# ffa-php-cli
+# ffa-php-cli [![Build Status](https://travis-ci.org/shadiakiki1986/ffa-php-cli.svg?branch=master)](https://travis-ci.org/shadiakiki1986/ffa-php-cli)
 A CLI for `ffa-php-core`
 
 # Installation
