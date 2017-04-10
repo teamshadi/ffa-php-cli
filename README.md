@@ -1,5 +1,5 @@
 # ffa-php-cli [![Build Status](https://travis-ci.org/shadiakiki1986/ffa-php-cli.svg?branch=master)](https://travis-ci.org/shadiakiki1986/ffa-php-cli)
-A [CLI](https://en.wikipedia.org/wiki/Command-line_interface) for `ffa-php-core`
+A [CLI](https://en.wikipedia.org/wiki/Command-line_interface) for [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock) and `ffa-php-core`
 
 # Installation
 Below code snippets are for linux
@@ -13,16 +13,16 @@ The current CLI is in another repository and needs to be rewritten.
 This is the rewrite, and it uses [Symfony2/Console](http://symfony.com/doc/current/console.html).
 Here are example usages before and after the rewrite:
 
-Currently
+Currently in [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock):
 ```bash
-php bin/ffa-old-treasury-debitInterest.php
-php bin/ffa-old-treasury-debitInterest.php format=json
-php bin/ffa-old-treasury-debitInterest.php format=json       date_month=2015-01
-php bin/ffa-old-treasury-debitInterest.php format=emailIfAny
-php bin/ffa-old-treasury-debitInterest.php format=emailIfAny accountType=Tanya notifyTracker=true publishToBlog=true
+php bin/treasury-debitInterest.php
+php bin/treasury-debitInterest.php format=json
+php bin/treasury-debitInterest.php format=json       date_month=2015-01
+php bin/treasury-debitInterest.php format=emailIfAny
+php bin/treasury-debitInterest.php format=emailIfAny accountType=Tanya notifyTracker=true publishToBlog=true
 ```
 
-To become
+To become in this package:
 ```bash
 php bin/ffa.php treasury:debit-interest
 php bin/ffa.php treasury:debit-interest --format=json
