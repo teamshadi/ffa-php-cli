@@ -1,22 +1,12 @@
 # ffa-php-cli [![Build Status](https://travis-ci.org/shadiakiki1986/ffa-php-cli.svg?branch=master)](https://travis-ci.org/shadiakiki1986/ffa-php-cli)
-A CLI for `ffa-php-core`
+A [CLI](https://en.wikipedia.org/wiki/Command-line_interface) for `ffa-php-core`
 
 # Installation
 Below code snippets are for linux
 
 1. Install php 7
 2. Install [composer](https://getcomposer.org/download/)
-```bash
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') === 'c32408bcd017c577ce80605420e5987ce947a5609e8443dd72cd3867cc3a0cf442e5bf4edddbcbe72246a953a6c48e21') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-```
-
-3. Install package dependencies
-```bash
-composer install
-```
+3. Install package dependencies: `php composer.phar install`
 
 # Usage
 The current CLI is in another repository and needs to be rewritten.
