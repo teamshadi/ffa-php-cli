@@ -35,7 +35,7 @@ php bin/ffa.php treasury:debit-interest --format=emailIfAny --accountType=Tanya 
 The rewrite process will start with the treasury debit interests report and gradually include all other reports
 
 ## treasury: SOA
-Old
+Currently in [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock):
 ```bash
 php bin/treasury-soa.php format=email emailTo="some@email.com;another@email.com" base=Dubai
 php bin/treasury-soa.php format=email emailTo="some@email.com;another@email.com" base=Dubai notifyTracker=true publishToBlog=true
@@ -48,7 +48,7 @@ php bin/ffa.php treasury:soa --base=Dubai --format=email --emailTo="some@email.c
 ```
 
 ## treasury: FFA017
-Old
+Currently in [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock):
 ```bash
 php bin/treasury-ffa017.php emailTo="some@email.com;another@email.com"
 ```
@@ -59,7 +59,7 @@ php bin/ffa.php treasury:ffa017 --emailTo="some@email.com;another@email.com"
 ```
 
 ## treasury: CMT
-Old
+Currently in [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock):
 ```bash
 php bin/treasury-cmt.php format=email base=Dubai notifyTracker=true
 ```
