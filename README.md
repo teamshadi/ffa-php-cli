@@ -1,6 +1,12 @@
 # ffa-php-cli [![Build Status](https://travis-ci.org/shadiakiki1986/ffa-php-cli.svg?branch=master)](https://travis-ci.org/shadiakiki1986/ffa-php-cli)
 A [CLI](https://en.wikipedia.org/wiki/Command-line_interface) for [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock) and `ffa-php-core`
 
+The goal is to
+- replace my dispersed scripts into this one package
+- pack it into a .phar file (similar to composer)
+- replace all my script calls in the crons with `php ffa.phar department:report --parameters`
+- drop my `ffa-mfe/databases-api` project
+
 # Installation
 Below code snippets are for linux
 
