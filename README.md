@@ -37,12 +37,23 @@ The rewrite process will start with the treasury debit interests report and grad
 ## treasury: SOA
 Old
 ```bash
-php bin/treasury-soa.php format=email emailTo=shadi@akikieng.com base=Dubai
-php bin/treasury-soa.php format=email emailTo=shadi@akikieng.com base=Dubai notifyTracker=true publishToBlog=true
+php bin/treasury-soa.php format=email emailTo="some@email.com;another@email.com" base=Dubai
+php bin/treasury-soa.php format=email emailTo="some@email.com;another@email.com" base=Dubai notifyTracker=true publishToBlog=true
 ```
 
 To become
 ```
 php bin/ffa.php treasury:soa --base=Dubai --format=email --emailTo="some@email.com;another@email.com"
 php bin/ffa.php treasury:soa --base=Dubai --format=email --emailTo="some@email.com;another@email.com" --notifyTracker --publishToBlog
+```
+
+## treasury: FFA017
+Old
+```bash
+php bin/treasury-ffa017.php emailTo="some@email.com;another@email.com"
+```
+
+To become
+```
+php bin/ffa.php treasury:ffa017 --emailTo="some@email.com;another@email.com"
 ```
