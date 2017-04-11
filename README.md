@@ -57,3 +57,14 @@ To become
 ```
 php bin/ffa.php treasury:ffa017 --emailTo="some@email.com;another@email.com"
 ```
+
+## treasury: CMT
+Old
+```bash
+php bin/treasury-cmt.php format=email base=Dubai notifyTracker=true
+```
+
+To become
+```
+php bin/ffa.php treasury:cmt --format=email --base=Dubai --notifyTracker
+```
