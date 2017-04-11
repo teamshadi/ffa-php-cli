@@ -13,6 +13,7 @@ The current CLI is in another repository and needs to be rewritten.
 This is the rewrite, and it uses [Symfony2/Console](http://symfony.com/doc/current/console.html).
 Here are example usages before and after the rewrite:
 
+## treasury: debit interest
 Currently in [ffa-php-mock](https://github.com/shadiakiki1986/ffa-php-mock):
 ```bash
 php bin/treasury-debitInterest.php
@@ -32,3 +33,16 @@ php bin/ffa.php treasury:debit-interest --format=emailIfAny --accountType=Tanya 
 ```
 
 The rewrite process will start with the treasury debit interests report and gradually include all other reports
+
+## treasury: SOA
+Old
+```bash
+php bin/treasury-soa.php format=email emailTo=shadi@akikieng.com base=Dubai
+php bin/treasury-soa.php format=email emailTo=shadi@akikieng.com base=Dubai notifyTracker=true publishToBlog=true
+```
+
+To become
+```
+php bin/ffa.php treasury:soa --base=Dubai --format=email --emailTo="some@email.com;another@email.com"
+php bin/ffa.php treasury:soa --base=Dubai --format=email --emailTo="some@email.com;another@email.com" --notifyTracker --publishToBlog
+```
